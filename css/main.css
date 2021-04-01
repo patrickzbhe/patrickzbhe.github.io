@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+}
+
+p,
+h1,
+div {
+  font-family: "eurostile", sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+}
+
+.name {
+  padding-top: 30vh;
+  margin-bottom: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.black {
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+
+.inner-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin: 15px;
+}
+
+.description {
+  height: 30vh;
+  line-height: 25vh;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.delay1 {
+  animation-delay: 0.5s;
+}
+
+.delay2 {
+  margin: 15px;
+  animation-delay: 2.5s;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  animation-delay: 1.5s;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  animation-delay: 1s;
+}
+.fa-github {
+  background: #000000;
+  color: rgb(255, 255, 255);
+  animation-delay: 2s;
+}
+
+.arrow-down {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+}
+
+.arrow-up {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.project-description {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 70vh;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.interest-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.interest-container > div > img {
+  width: 20vh;
+  height: 20vh;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.back-to-top-link {
+  text-decoration: none;
+  color: inherit;
+  font-family: "eurostile", sans-serif;
+}
+
+.last {
+  margin: 20px;
+}
+
+.back-to-top-container {
+}
